@@ -27,7 +27,8 @@ namespace Contact_Tracing_App
                 all = false;
             else if (string.IsNullOrEmpty(txtbxaddress.Text))
                 all = false;
-
+            else if (string.IsNullOrEmpty(txtbxAge.Text))
+                all = false;
             if (all)           
             {
                 MessageBox.Show("Remember to Always stay safe", "Thank you");
@@ -41,6 +42,8 @@ namespace Contact_Tracing_App
             txtbxaddress.Clear();
             txtbxcontactno.Clear();
             txtbxtime.Clear();
+            txtbxEmail.Clear();
+            txtbxAge.Clear();
         }
     }
 }
