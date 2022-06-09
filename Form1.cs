@@ -35,6 +35,12 @@ namespace Contact_Tracing_App
             else
                 MessageBox.Show("Please Fill in All the Details", "We want to Keep you safe");
 
+            txtbxLastName.Clear();
+            txtbxFirstName.Clear();
+            txtbxMiddleName.Clear();
+            txtbxaddress.Clear();
+            txtbxcontactno.Clear();
+            txtbxtime.Clear();
         }
     }
 }
