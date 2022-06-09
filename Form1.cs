@@ -12,9 +12,29 @@ namespace Contact_Tracing_App
             MessageBox.Show("Trace it","Welcome");
         }
 
-        private void btnsubmit_Click(object sender, EventArgs e)
+        private void btnsubmit_Click(object sender, EventArgs e) 
         {
-            MessageBox.Show("Remember to Always stay safe", "Thank you");
+            bool all = true;
+            if (string.IsNullOrEmpty(txtbxFirstName.Text))
+                all = false;
+            else if (string.IsNullOrEmpty(txtbxLastName.Text))
+                all = false;
+            else if (string.IsNullOrEmpty(txtbxMiddleName.Text))
+                all = false;
+            else if (string.IsNullOrEmpty(txtbxtime.Text))
+                all = false;
+            else if (string.IsNullOrEmpty(txtbxcontactno.Text))
+                all = false;
+            else if (string.IsNullOrEmpty(txtbxaddress.Text))
+                all = false;
+
+            if (all)           
+            {
+                MessageBox.Show("Remember to Always stay safe", "Thank you");
+            }
+            else
+                MessageBox.Show("Please Fill in All the Details", "We want to Keep you safe");
+
         }
     }
 }

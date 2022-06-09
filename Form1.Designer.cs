@@ -79,7 +79,7 @@
             // 
             // txtbxtime
             // 
-            this.txtbxtime.Location = new System.Drawing.Point(8, 192);
+            this.txtbxtime.Location = new System.Drawing.Point(12, 192);
             this.txtbxtime.Name = "txtbxtime";
             this.txtbxtime.Size = new System.Drawing.Size(144, 23);
             this.txtbxtime.TabIndex = 8;
@@ -145,7 +145,7 @@
             // 
             // txtbxaddress
             // 
-            this.txtbxaddress.Location = new System.Drawing.Point(10, 139);
+            this.txtbxaddress.Location = new System.Drawing.Point(12, 139);
             this.txtbxaddress.Name = "txtbxaddress";
             this.txtbxaddress.Size = new System.Drawing.Size(144, 23);
             this.txtbxaddress.TabIndex = 16;
