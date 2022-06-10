@@ -40,7 +40,8 @@ namespace Contact_Tracing_App
             else
                 MessageBox.Show("Please Fill in All the Details Completely", "We want to Keep you safe");
             //making a copy of responses
-            StreamWriter responses = new StreamWriter(@"C:\Users\Carl Joseph\source\repos\Contact Tracing App\Responses\Responses.txt"); ;
+            //Personal Information Part
+            StreamWriter responses = new StreamWriter(@"C:\Users\Carl Joseph\source\repos\Contact Tracing App\Responses\Responses.txt");
             responses.WriteLine("Respondent 1");
             responses.WriteLine("Name: " + txtbxFirstName.Text + " " + txtbxMiddleName.Text + " " + txtbxLastName.Text);
             responses.WriteLine("Age: " + txtbxAge.Text);
@@ -48,6 +49,7 @@ namespace Contact_Tracing_App
             responses.WriteLine("Email Address: " + txtbxEmail.Text);
             responses.WriteLine("Address: " + txtbxaddress.Text);
             responses.WriteLine("Time of Visit; " + txtbxtime.Text);
+            //Health Check question 1
             if (chkbxSymptom1.Checked)
             {
                 responses.WriteLine("Experienced: " + chkbxSymptom1.Text);
@@ -76,8 +78,34 @@ namespace Contact_Tracing_App
             {
                 responses.WriteLine("Experienced: " + chkbxSymptom7.Text);
             }
+            if (chkbxSymptom8.Checked)
+            {
+                responses.WriteLine("Experienced: " + chkbxSymptom8.Text);
+            }
+            if (chkbxSymptom9.Checked)
+            {
+                responses.WriteLine("Experienced: " + chkbxSymptom9.Text);
+            }
+            //Health Check Question 2
+            if (chkbxyes1.Checked)
+            {
+                responses.WriteLine("Have been in close contact with a probable or confirmed case of COVID-19");
+            }
+            else
+            {
+                responses.WriteLine("Did not have a close contact with a probable or confirmed case of COVID-19");
+            }
+            //Health Check Question 3
+            if (chkbxyes2.Checked)
+            {
+                responses.WriteLine("Fully Vaccinated");
+            }
+            else
+            {
+                responses.WriteLine("Not Fully Vaccinated");
+            }
             responses.Close();
-           //reset
+            //reset
             if (all)
             {
                 txtbxLastName.Clear();

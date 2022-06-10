@@ -320,9 +320,9 @@
             this.LblQ2.AutoSize = true;
             this.LblQ2.Location = new System.Drawing.Point(12, 361);
             this.LblQ2.Name = "LblQ2";
-            this.LblQ2.Size = new System.Drawing.Size(425, 15);
+            this.LblQ2.Size = new System.Drawing.Size(429, 15);
             this.LblQ2.TabIndex = 33;
-            this.LblQ2.Text = "Have you been in close contact with a probable or confirmed case of Covid-19?";
+            this.LblQ2.Text = "Have you been in close contact with a probable or confirmed case of COVID-19?";
             this.LblQ2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // chkbxyes1
