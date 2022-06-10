@@ -383,6 +383,7 @@
             this.chkbxCertification.TabIndex = 39;
             this.chkbxCertification.Text = "I hereby certify that the information given is true, correct, and complete;";
             this.chkbxCertification.UseVisualStyleBackColor = true;
+            this.chkbxCertification.CheckedChanged += new System.EventHandler(this.chkbxCertification_CheckedChanged);
             // 
             // lblCertification
             // 
