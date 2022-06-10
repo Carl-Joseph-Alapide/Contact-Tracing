@@ -39,6 +39,44 @@ namespace Contact_Tracing_App
             }
             else
                 MessageBox.Show("Please Fill in All the Details Completely", "We want to Keep you safe");
+            //making a copy of responses
+            StreamWriter responses = new StreamWriter(@"C:\Users\Carl Joseph\source\repos\Contact Tracing App\Responses\Responses.txt"); ;
+            responses.WriteLine("Respondent 1");
+            responses.WriteLine("Name: " + txtbxFirstName.Text + " " + txtbxMiddleName.Text + " " + txtbxLastName.Text);
+            responses.WriteLine("Age: " + txtbxAge.Text);
+            responses.WriteLine("Contact no.: " + txtbxcontactno.Text);
+            responses.WriteLine("Email Address: " + txtbxEmail.Text);
+            responses.WriteLine("Address: " + txtbxaddress.Text);
+            responses.WriteLine("Time of Visit; " + txtbxtime.Text);
+            if (chkbxSymptom1.Checked)
+            {
+                responses.WriteLine("Experienced: " + chkbxSymptom1.Text);
+            }
+            if (chkbxSymptom2.Checked)
+            {
+                responses.WriteLine("Experienced: " + chkbxSymptom2.Text);
+            }
+            if (chkbxSymptom3.Checked)
+            {
+                responses.WriteLine("Experienced: " + chkbxSymptom3.Text);
+            }
+            if (chkbxSymptom4.Checked)
+            {
+                responses.WriteLine("Experienced: " + chkbxSymptom4.Text);
+            }
+            if (chkbxSymptom5.Checked)
+            {
+                responses.WriteLine("Experienced: " + chkbxSymptom5.Text);
+            }
+            if (chkbxSymptom6.Checked)
+            {
+                responses.WriteLine("Experienced: " + chkbxSymptom6.Text);
+            }
+            if (chkbxSymptom7.Checked)
+            {
+                responses.WriteLine("Experienced: " + chkbxSymptom7.Text);
+            }
+            responses.Close();
            //reset
             if (all)
             {
