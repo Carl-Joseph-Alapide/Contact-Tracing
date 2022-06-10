@@ -153,5 +153,53 @@ namespace Contact_Tracing_App
             else
                 btnsubmit.Enabled = false;
         }
+
+        private void chkbxyes1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkbxyes1.Checked)
+            {
+                chkbxNo1.Checked = false;
+            }
+            else if (chkbxNo1.Checked)
+            {
+                chkbxyes1.Checked = false;
+            }
+        }
+
+        private void chkbxyes2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkbxyes2.Checked)
+            {
+                chkbxNo2.Checked = false;
+            }
+            else if (chkbxNo2.Checked)
+            {
+                chkbxyes2.Checked = false;
+            }
+        }
+
+        private void chkbxNo1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkbxNo1.Checked)
+            {
+                chkbxyes1.Checked = false;
+            }
+            else if (chkbxyes1.Checked)
+            {
+                chkbxNo1.Checked = false;
+            }
+        }
+
+        private void chkbxNo2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkbxNo2.Checked)
+            {
+                chkbxyes2.Checked = false;
+            }
+            else if (chkbxyes2.Checked)
+            {
+                chkbxNo2.Checked = false;
+            }
+        }
     }
 }

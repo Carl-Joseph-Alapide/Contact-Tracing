@@ -66,18 +66,20 @@
             this.chkbxCertification = new System.Windows.Forms.CheckBox();
             this.lblCertification = new System.Windows.Forms.Label();
             this.lblPersonalInfo = new System.Windows.Forms.Label();
+            this.PicbxLogo = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.PicbxLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // txtbxFirstName
             // 
-            this.txtbxFirstName.Location = new System.Drawing.Point(162, 89);
+            this.txtbxFirstName.Location = new System.Drawing.Point(162, 64);
             this.txtbxFirstName.Name = "txtbxFirstName";
             this.txtbxFirstName.Size = new System.Drawing.Size(144, 23);
             this.txtbxFirstName.TabIndex = 0;
             // 
             // txtbxcontactno
             // 
-            this.txtbxcontactno.Location = new System.Drawing.Point(162, 143);
+            this.txtbxcontactno.Location = new System.Drawing.Point(162, 118);
             this.txtbxcontactno.Name = "txtbxcontactno";
             this.txtbxcontactno.Size = new System.Drawing.Size(144, 23);
             this.txtbxcontactno.TabIndex = 2;
@@ -85,7 +87,7 @@
             // lblcontactno
             // 
             this.lblcontactno.AutoSize = true;
-            this.lblcontactno.Location = new System.Drawing.Point(163, 125);
+            this.lblcontactno.Location = new System.Drawing.Point(163, 100);
             this.lblcontactno.Name = "lblcontactno";
             this.lblcontactno.Size = new System.Drawing.Size(72, 15);
             this.lblcontactno.TabIndex = 5;
@@ -93,7 +95,7 @@
             // 
             // btnsubmit
             // 
-            this.btnsubmit.Location = new System.Drawing.Point(206, 566);
+            this.btnsubmit.Location = new System.Drawing.Point(209, 532);
             this.btnsubmit.Name = "btnsubmit";
             this.btnsubmit.Size = new System.Drawing.Size(75, 23);
             this.btnsubmit.TabIndex = 7;
@@ -103,7 +105,7 @@
             // 
             // txtbxtime
             // 
-            this.txtbxtime.Location = new System.Drawing.Point(310, 197);
+            this.txtbxtime.Location = new System.Drawing.Point(310, 172);
             this.txtbxtime.Name = "txtbxtime";
             this.txtbxtime.Size = new System.Drawing.Size(144, 23);
             this.txtbxtime.TabIndex = 8;
@@ -111,7 +113,7 @@
             // lbltime
             // 
             this.lbltime.AutoSize = true;
-            this.lbltime.Location = new System.Drawing.Point(311, 179);
+            this.lbltime.Location = new System.Drawing.Point(311, 154);
             this.lbltime.Name = "lbltime";
             this.lbltime.Size = new System.Drawing.Size(74, 15);
             this.lbltime.TabIndex = 9;
@@ -119,7 +121,7 @@
             // 
             // txtbxLastName
             // 
-            this.txtbxLastName.Location = new System.Drawing.Point(14, 89);
+            this.txtbxLastName.Location = new System.Drawing.Point(14, 64);
             this.txtbxLastName.Name = "txtbxLastName";
             this.txtbxLastName.Size = new System.Drawing.Size(144, 23);
             this.txtbxLastName.TabIndex = 11;
@@ -127,7 +129,7 @@
             // lblfirstname
             // 
             this.lblfirstname.AutoSize = true;
-            this.lblfirstname.Location = new System.Drawing.Point(162, 68);
+            this.lblfirstname.Location = new System.Drawing.Point(162, 43);
             this.lblfirstname.Name = "lblfirstname";
             this.lblfirstname.Size = new System.Drawing.Size(67, 15);
             this.lblfirstname.TabIndex = 10;
@@ -136,7 +138,7 @@
             // lblLastName
             // 
             this.lblLastName.AutoSize = true;
-            this.lblLastName.Location = new System.Drawing.Point(15, 71);
+            this.lblLastName.Location = new System.Drawing.Point(15, 46);
             this.lblLastName.Name = "lblLastName";
             this.lblLastName.Size = new System.Drawing.Size(66, 15);
             this.lblLastName.TabIndex = 12;
@@ -145,7 +147,7 @@
             // lblMidName
             // 
             this.lblMidName.AutoSize = true;
-            this.lblMidName.Location = new System.Drawing.Point(312, 71);
+            this.lblMidName.Location = new System.Drawing.Point(312, 46);
             this.lblMidName.Name = "lblMidName";
             this.lblMidName.Size = new System.Drawing.Size(82, 15);
             this.lblMidName.TabIndex = 13;
@@ -153,7 +155,7 @@
             // 
             // txtbxMiddleName
             // 
-            this.txtbxMiddleName.Location = new System.Drawing.Point(312, 89);
+            this.txtbxMiddleName.Location = new System.Drawing.Point(312, 64);
             this.txtbxMiddleName.Name = "txtbxMiddleName";
             this.txtbxMiddleName.Size = new System.Drawing.Size(144, 23);
             this.txtbxMiddleName.TabIndex = 14;
@@ -161,7 +163,7 @@
             // lbladdress
             // 
             this.lbladdress.AutoSize = true;
-            this.lbladdress.Location = new System.Drawing.Point(12, 179);
+            this.lbladdress.Location = new System.Drawing.Point(12, 154);
             this.lbladdress.Name = "lbladdress";
             this.lbladdress.Size = new System.Drawing.Size(74, 15);
             this.lbladdress.TabIndex = 15;
@@ -169,21 +171,21 @@
             // 
             // txtbxaddress
             // 
-            this.txtbxaddress.Location = new System.Drawing.Point(14, 197);
+            this.txtbxaddress.Location = new System.Drawing.Point(14, 172);
             this.txtbxaddress.Name = "txtbxaddress";
             this.txtbxaddress.Size = new System.Drawing.Size(290, 23);
             this.txtbxaddress.TabIndex = 16;
             // 
             // txtbxEmail
             // 
-            this.txtbxEmail.Location = new System.Drawing.Point(312, 143);
+            this.txtbxEmail.Location = new System.Drawing.Point(312, 118);
             this.txtbxEmail.Name = "txtbxEmail";
             this.txtbxEmail.Size = new System.Drawing.Size(142, 23);
             this.txtbxEmail.TabIndex = 17;
             // 
             // txtbxAge
             // 
-            this.txtbxAge.Location = new System.Drawing.Point(14, 143);
+            this.txtbxAge.Location = new System.Drawing.Point(14, 118);
             this.txtbxAge.Name = "txtbxAge";
             this.txtbxAge.Size = new System.Drawing.Size(142, 23);
             this.txtbxAge.TabIndex = 18;
@@ -191,7 +193,7 @@
             // lblAge
             // 
             this.lblAge.AutoSize = true;
-            this.lblAge.Location = new System.Drawing.Point(14, 125);
+            this.lblAge.Location = new System.Drawing.Point(14, 100);
             this.lblAge.Name = "lblAge";
             this.lblAge.Size = new System.Drawing.Size(31, 15);
             this.lblAge.TabIndex = 19;
@@ -200,7 +202,7 @@
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
-            this.lblEmail.Location = new System.Drawing.Point(312, 125);
+            this.lblEmail.Location = new System.Drawing.Point(312, 100);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(84, 15);
             this.lblEmail.TabIndex = 20;
@@ -209,7 +211,7 @@
             // lblHealthcheck
             // 
             this.lblHealthcheck.AutoSize = true;
-            this.lblHealthcheck.Location = new System.Drawing.Point(14, 244);
+            this.lblHealthcheck.Location = new System.Drawing.Point(17, 210);
             this.lblHealthcheck.Name = "lblHealthcheck";
             this.lblHealthcheck.Size = new System.Drawing.Size(78, 15);
             this.lblHealthcheck.TabIndex = 21;
@@ -218,7 +220,7 @@
             // LblQ1
             // 
             this.LblQ1.AutoSize = true;
-            this.LblQ1.Location = new System.Drawing.Point(12, 268);
+            this.LblQ1.Location = new System.Drawing.Point(15, 234);
             this.LblQ1.Name = "LblQ1";
             this.LblQ1.Size = new System.Drawing.Size(414, 15);
             this.LblQ1.TabIndex = 23;
@@ -228,7 +230,7 @@
             // chkbxSymptom1
             // 
             this.chkbxSymptom1.AutoSize = true;
-            this.chkbxSymptom1.Location = new System.Drawing.Point(14, 300);
+            this.chkbxSymptom1.Location = new System.Drawing.Point(17, 266);
             this.chkbxSymptom1.Name = "chkbxSymptom1";
             this.chkbxSymptom1.Size = new System.Drawing.Size(54, 19);
             this.chkbxSymptom1.TabIndex = 24;
@@ -238,7 +240,7 @@
             // chkbxSymptom2
             // 
             this.chkbxSymptom2.AutoSize = true;
-            this.chkbxSymptom2.Location = new System.Drawing.Point(74, 300);
+            this.chkbxSymptom2.Location = new System.Drawing.Point(77, 266);
             this.chkbxSymptom2.Name = "chkbxSymptom2";
             this.chkbxSymptom2.Size = new System.Drawing.Size(134, 19);
             this.chkbxSymptom2.TabIndex = 25;
@@ -248,7 +250,7 @@
             // chkbxSymptom6
             // 
             this.chkbxSymptom6.AutoSize = true;
-            this.chkbxSymptom6.Location = new System.Drawing.Point(14, 325);
+            this.chkbxSymptom6.Location = new System.Drawing.Point(17, 291);
             this.chkbxSymptom6.Name = "chkbxSymptom6";
             this.chkbxSymptom6.Size = new System.Drawing.Size(79, 19);
             this.chkbxSymptom6.TabIndex = 26;
@@ -258,7 +260,7 @@
             // chkbxSymptom3
             // 
             this.chkbxSymptom3.AutoSize = true;
-            this.chkbxSymptom3.Location = new System.Drawing.Point(206, 300);
+            this.chkbxSymptom3.Location = new System.Drawing.Point(209, 266);
             this.chkbxSymptom3.Name = "chkbxSymptom3";
             this.chkbxSymptom3.Size = new System.Drawing.Size(84, 19);
             this.chkbxSymptom3.TabIndex = 27;
@@ -268,7 +270,7 @@
             // chkbxSymptom7
             // 
             this.chkbxSymptom7.AutoSize = true;
-            this.chkbxSymptom7.Location = new System.Drawing.Point(99, 325);
+            this.chkbxSymptom7.Location = new System.Drawing.Point(102, 291);
             this.chkbxSymptom7.Name = "chkbxSymptom7";
             this.chkbxSymptom7.Size = new System.Drawing.Size(70, 19);
             this.chkbxSymptom7.TabIndex = 28;
@@ -278,7 +280,7 @@
             // chkbxSymptom8
             // 
             this.chkbxSymptom8.AutoSize = true;
-            this.chkbxSymptom8.Location = new System.Drawing.Point(170, 325);
+            this.chkbxSymptom8.Location = new System.Drawing.Point(173, 291);
             this.chkbxSymptom8.Name = "chkbxSymptom8";
             this.chkbxSymptom8.Size = new System.Drawing.Size(136, 19);
             this.chkbxSymptom8.TabIndex = 29;
@@ -288,7 +290,7 @@
             // chkbxSymptom9
             // 
             this.chkbxSymptom9.AutoSize = true;
-            this.chkbxSymptom9.Location = new System.Drawing.Point(312, 325);
+            this.chkbxSymptom9.Location = new System.Drawing.Point(315, 291);
             this.chkbxSymptom9.Name = "chkbxSymptom9";
             this.chkbxSymptom9.Size = new System.Drawing.Size(142, 19);
             this.chkbxSymptom9.TabIndex = 30;
@@ -298,7 +300,7 @@
             // chkbxSymptom4
             // 
             this.chkbxSymptom4.AutoSize = true;
-            this.chkbxSymptom4.Location = new System.Drawing.Point(296, 300);
+            this.chkbxSymptom4.Location = new System.Drawing.Point(299, 266);
             this.chkbxSymptom4.Name = "chkbxSymptom4";
             this.chkbxSymptom4.Size = new System.Drawing.Size(84, 19);
             this.chkbxSymptom4.TabIndex = 31;
@@ -308,7 +310,7 @@
             // chkbxSymptom5
             // 
             this.chkbxSymptom5.AutoSize = true;
-            this.chkbxSymptom5.Location = new System.Drawing.Point(386, 300);
+            this.chkbxSymptom5.Location = new System.Drawing.Point(389, 266);
             this.chkbxSymptom5.Name = "chkbxSymptom5";
             this.chkbxSymptom5.Size = new System.Drawing.Size(119, 19);
             this.chkbxSymptom5.TabIndex = 32;
@@ -318,7 +320,7 @@
             // LblQ2
             // 
             this.LblQ2.AutoSize = true;
-            this.LblQ2.Location = new System.Drawing.Point(12, 361);
+            this.LblQ2.Location = new System.Drawing.Point(15, 327);
             this.LblQ2.Name = "LblQ2";
             this.LblQ2.Size = new System.Drawing.Size(429, 15);
             this.LblQ2.TabIndex = 33;
@@ -328,27 +330,29 @@
             // chkbxyes1
             // 
             this.chkbxyes1.AutoSize = true;
-            this.chkbxyes1.Location = new System.Drawing.Point(14, 391);
+            this.chkbxyes1.Location = new System.Drawing.Point(17, 357);
             this.chkbxyes1.Name = "chkbxyes1";
             this.chkbxyes1.Size = new System.Drawing.Size(43, 19);
             this.chkbxyes1.TabIndex = 34;
             this.chkbxyes1.Text = "Yes";
             this.chkbxyes1.UseVisualStyleBackColor = true;
+            this.chkbxyes1.CheckedChanged += new System.EventHandler(this.chkbxyes1_CheckedChanged);
             // 
             // chkbxNo1
             // 
             this.chkbxNo1.AutoSize = true;
-            this.chkbxNo1.Location = new System.Drawing.Point(63, 391);
+            this.chkbxNo1.Location = new System.Drawing.Point(66, 357);
             this.chkbxNo1.Name = "chkbxNo1";
             this.chkbxNo1.Size = new System.Drawing.Size(42, 19);
             this.chkbxNo1.TabIndex = 35;
             this.chkbxNo1.Text = "No";
             this.chkbxNo1.UseVisualStyleBackColor = true;
+            this.chkbxNo1.CheckedChanged += new System.EventHandler(this.chkbxNo1_CheckedChanged);
             // 
             // LblQ3
             // 
             this.LblQ3.AutoSize = true;
-            this.LblQ3.Location = new System.Drawing.Point(12, 429);
+            this.LblQ3.Location = new System.Drawing.Point(15, 395);
             this.LblQ3.Name = "LblQ3";
             this.LblQ3.Size = new System.Drawing.Size(141, 15);
             this.LblQ3.TabIndex = 36;
@@ -358,27 +362,29 @@
             // chkbxNo2
             // 
             this.chkbxNo2.AutoSize = true;
-            this.chkbxNo2.Location = new System.Drawing.Point(61, 463);
+            this.chkbxNo2.Location = new System.Drawing.Point(64, 429);
             this.chkbxNo2.Name = "chkbxNo2";
             this.chkbxNo2.Size = new System.Drawing.Size(42, 19);
             this.chkbxNo2.TabIndex = 38;
             this.chkbxNo2.Text = "No";
             this.chkbxNo2.UseVisualStyleBackColor = true;
+            this.chkbxNo2.CheckedChanged += new System.EventHandler(this.chkbxNo2_CheckedChanged);
             // 
             // chkbxyes2
             // 
             this.chkbxyes2.AutoSize = true;
-            this.chkbxyes2.Location = new System.Drawing.Point(12, 463);
+            this.chkbxyes2.Location = new System.Drawing.Point(15, 429);
             this.chkbxyes2.Name = "chkbxyes2";
             this.chkbxyes2.Size = new System.Drawing.Size(43, 19);
             this.chkbxyes2.TabIndex = 37;
             this.chkbxyes2.Text = "Yes";
             this.chkbxyes2.UseVisualStyleBackColor = true;
+            this.chkbxyes2.CheckedChanged += new System.EventHandler(this.chkbxyes2_CheckedChanged);
             // 
             // chkbxCertification
             // 
             this.chkbxCertification.AutoSize = true;
-            this.chkbxCertification.Location = new System.Drawing.Point(12, 508);
+            this.chkbxCertification.Location = new System.Drawing.Point(15, 474);
             this.chkbxCertification.Name = "chkbxCertification";
             this.chkbxCertification.Size = new System.Drawing.Size(406, 19);
             this.chkbxCertification.TabIndex = 39;
@@ -389,7 +395,7 @@
             // lblCertification
             // 
             this.lblCertification.AutoSize = true;
-            this.lblCertification.Location = new System.Drawing.Point(28, 530);
+            this.lblCertification.Location = new System.Drawing.Point(31, 496);
             this.lblCertification.Name = "lblCertification";
             this.lblCertification.Size = new System.Drawing.Size(337, 15);
             this.lblCertification.TabIndex = 40;
@@ -405,11 +411,22 @@
             this.lblPersonalInfo.TabIndex = 41;
             this.lblPersonalInfo.Text = "Personal Information";
             // 
+            // PicbxLogo
+            // 
+            this.PicbxLogo.Image = ((System.Drawing.Image)(resources.GetObject("PicbxLogo.Image")));
+            this.PicbxLogo.Location = new System.Drawing.Point(475, 46);
+            this.PicbxLogo.Name = "PicbxLogo";
+            this.PicbxLogo.Size = new System.Drawing.Size(161, 157);
+            this.PicbxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PicbxLogo.TabIndex = 42;
+            this.PicbxLogo.TabStop = false;
+            // 
             // ContactTracing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(551, 634);
+            this.ClientSize = new System.Drawing.Size(648, 610);
+            this.Controls.Add(this.PicbxLogo);
             this.Controls.Add(this.lblPersonalInfo);
             this.Controls.Add(this.lblCertification);
             this.Controls.Add(this.chkbxCertification);
@@ -448,9 +465,11 @@
             this.Controls.Add(this.txtbxcontactno);
             this.Controls.Add(this.txtbxFirstName);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "ContactTracing";
             this.Text = "Trace It";
             this.Load += new System.EventHandler(this.ContactTracing_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.PicbxLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -500,5 +519,6 @@
         private CheckBox chkbxCertification;
         private Label lblCertification;
         private Label lblPersonalInfo;
+        private PictureBox PicbxLogo;
     }
 }
