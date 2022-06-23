@@ -25,6 +25,8 @@ namespace Contact_Tracing_App
                 all = false;
             else if (string.IsNullOrEmpty(txtbxtime.Text))
                 all = false;
+            else if (string.IsNullOrEmpty(txtbxdate.Text))
+                all = false;
             else if (string.IsNullOrEmpty(txtbxcontactno.Text) || txtbxcontactno.Text.Length != 11)
             {
                 all = false;
@@ -57,6 +59,7 @@ namespace Contact_Tracing_App
                 responses.WriteLine("Email Address: " + txtbxEmail.Text);
                 responses.WriteLine("Address: " + txtbxaddress.Text);
                 responses.WriteLine("Time of Visit; " + txtbxtime.Text);
+                responses.WriteLine("Date of Visit; " + txtbxdate.Text);
                 //Health Check question 1
                 if (chkbxSymptom1.Checked)
                 {
