@@ -1,0 +1,12 @@
+Respondent 1
+Name: sdas asdasd bagyo
+Age: asdasd
+Contact no.: 12345678901
+Email Address: asdsa
+Address: asdsad
+Time of Visit: asdsa
+Date of Visit: January 5, 2019
+Experienced: Fever
+Experienced: Headache
+Have been in close contact with a probable or confirmed case of COVID-19
+Fully Vaccinated

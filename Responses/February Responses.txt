@@ -1,0 +1,24 @@
+Respondent 2
+Name: asdasd asdasd dasd
+Age: asda
+Contact no.: 12345678901
+Email Address: asdasd
+Address: asdas
+Time of Visit: asdas
+Date of Visit: February 4, 2021
+Experienced: Fever
+Experienced: Headache
+Have been in close contact with a probable or confirmed case of COVID-19
+Fully Vaccinated
+Respondent 3
+Name: asdas asdasd dsa
+Age: asdasd
+Contact no.: 12345678901
+Email Address: asdads
+Address: sdasd
+Time of Visit: sad
+Date of Visit: February 2, 2020
+Experienced: Fever
+Experienced: Headache
+Have been in close contact with a probable or confirmed case of COVID-19
+Fully Vaccinated
