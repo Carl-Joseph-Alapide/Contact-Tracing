@@ -149,7 +149,6 @@ namespace Contact_Tracing_App
             StreamReader Visitors = new StreamReader(@"C:\Users\Carl Joseph\source\repos\Contact Tracing App\Responses\Responses.txt");
             MessageBox.Show(Visitors.ReadToEnd());
         }
-       
         string month = "Months";
         private void File()
         {
@@ -217,7 +216,9 @@ namespace Contact_Tracing_App
         }
         private void File_content ()
         {
-            StreamWriter responses = new StreamWriter(@"C:\Users\Carl Joseph\source\repos\Contact Tracing App\Responses\" + (month) + " responses.txt", true);
+            string day = cmboxDay.Text;
+            string year = cmboxYear.Text;   
+            StreamWriter responses = new StreamWriter(@"C:\Users\Carl Joseph\source\repos\Contact Tracing App\Responses\" + (month) + " " + (day) + ", " + (year) + " responses.txt", true);
             ++counter;
             responses.WriteLine("Respondent " + counter);
             //Personal Information Part
