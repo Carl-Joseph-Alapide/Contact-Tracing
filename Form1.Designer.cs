@@ -69,6 +69,7 @@
             this.PicbxLogo = new System.Windows.Forms.PictureBox();
             this.lbldate = new System.Windows.Forms.Label();
             this.txtbxdate = new System.Windows.Forms.TextBox();
+            this.btnlist = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.PicbxLogo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -439,11 +440,22 @@
             this.txtbxdate.Size = new System.Drawing.Size(215, 23);
             this.txtbxdate.TabIndex = 43;
             // 
+            // btnlist
+            // 
+            this.btnlist.Location = new System.Drawing.Point(452, 590);
+            this.btnlist.Name = "btnlist";
+            this.btnlist.Size = new System.Drawing.Size(75, 23);
+            this.btnlist.TabIndex = 45;
+            this.btnlist.Text = "List";
+            this.btnlist.UseVisualStyleBackColor = true;
+            this.btnlist.Click += new System.EventHandler(this.btnlist_Click);
+            // 
             // ContactTracing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(648, 649);
+            this.Controls.Add(this.btnlist);
             this.Controls.Add(this.lbldate);
             this.Controls.Add(this.txtbxdate);
             this.Controls.Add(this.PicbxLogo);
@@ -542,5 +554,6 @@
         private PictureBox PicbxLogo;
         private Label lbldate;
         private TextBox txtbxdate;
+        private Button btnlist;
     }
 }

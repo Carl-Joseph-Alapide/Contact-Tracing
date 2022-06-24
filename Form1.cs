@@ -126,6 +126,7 @@ namespace Contact_Tracing_App
                 txtbxaddress.Clear();
                 txtbxcontactno.Clear();
                 txtbxtime.Clear();
+                txtbxdate.Clear();
                 txtbxEmail.Clear();
                 txtbxAge.Clear();
                 //Q1
@@ -203,6 +204,12 @@ namespace Contact_Tracing_App
             {
                 chkbxNo2.Checked = false;
             }
+        }
+
+        private void btnlist_Click(object sender, EventArgs e)
+        {
+            StreamReader Visitors = new StreamReader(@"C:\Users\Carl Joseph\source\repos\Contact Tracing App\Responses\Responses.txt");
+            MessageBox.Show (Visitors.ReadToEnd());
         }
     }
 }
