@@ -216,7 +216,9 @@ namespace Contact_Tracing_App
             StreamWriter responses = new StreamWriter(@"C:\Users\Carl Joseph\source\repos\Contact Tracing App\Responses\" + (month) + " " + (day) + ", " + (year) + " responses.txt", true);
             ++counter;
             responses.WriteLine("Respondent " + counter);
+            responses.WriteLine(" ");
             //Personal Information Part
+            responses.WriteLine("Personal Information");
             responses.WriteLine("Name: " + txtbxFirstName.Text + " " + txtbxMiddleName.Text + " " + txtbxLastName.Text);
             responses.WriteLine("Age: " + txtbxAge.Text);
             responses.WriteLine("Contact no.: " + txtbxcontactno.Text);
@@ -224,6 +226,8 @@ namespace Contact_Tracing_App
             responses.WriteLine("Address: " + txtbxaddress.Text);
             responses.WriteLine("Time of Visit: " + txtbxtime.Text);
             responses.WriteLine("Date of Visit: " + cmboxmonth.Text + " " + cmboxDay.Text + ", " + cmboxYear.Text);
+            responses.WriteLine(" ");
+            responses.WriteLine("Health Check");
             //Health Check question 1
             if (chkbxSymptom1.Checked)
             {
@@ -279,6 +283,9 @@ namespace Contact_Tracing_App
             {
                 responses.WriteLine("Not Fully Vaccinated");
             }
+            responses.WriteLine(" ");
+            responses.WriteLine("------------------");
+            responses.WriteLine(" ");
             responses.Close();
         }
         private void btnsearch_Click(object sender, EventArgs e)
