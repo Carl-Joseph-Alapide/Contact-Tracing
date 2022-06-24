@@ -164,6 +164,56 @@ namespace Contact_Tracing_App
                 month = "February";
                 File_content();
             }
+            else if (cmboxmonth.Text == "March")
+            {
+                month = "March";
+                File_content();
+            }
+            else if (cmboxmonth.Text == "April")
+            {
+                month = "April";
+                File_content();
+            }
+            else if (cmboxmonth.Text == "May")
+            {
+                month = "May";
+                File_content();
+            }
+            else if (cmboxmonth.Text == "June")
+            {
+                month = "June";
+                File_content();
+            }
+            else if (cmboxmonth.Text == "July")
+            {
+                month = "July";
+                File_content();
+            }
+            else if (cmboxmonth.Text == "August")
+            {
+                month = "August";
+                File_content();
+            }
+            else if (cmboxmonth.Text == "September")
+            {
+                month = "September";
+                File_content();
+            }
+            else if (cmboxmonth.Text == "October")
+            {
+                month = "October";
+                File_content();
+            }
+            else if (cmboxmonth.Text == "November")
+            {
+                month = "November";
+                File_content();
+            }
+            else if (cmboxmonth.Text == "December")
+            {
+                month = "December";
+                File_content();
+            }
         }
         private void File_content ()
         {
