@@ -68,8 +68,10 @@
             this.lblPersonalInfo = new System.Windows.Forms.Label();
             this.PicbxLogo = new System.Windows.Forms.PictureBox();
             this.lbldate = new System.Windows.Forms.Label();
-            this.txtbxdate = new System.Windows.Forms.TextBox();
             this.btnlist = new System.Windows.Forms.Button();
+            this.cmboxmonth = new System.Windows.Forms.ComboBox();
+            this.cmboxDay = new System.Windows.Forms.ComboBox();
+            this.cmboxYear = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.PicbxLogo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -110,7 +112,7 @@
             // 
             this.txtbxtime.Location = new System.Drawing.Point(14, 221);
             this.txtbxtime.Name = "txtbxtime";
-            this.txtbxtime.Size = new System.Drawing.Size(215, 23);
+            this.txtbxtime.Size = new System.Drawing.Size(139, 23);
             this.txtbxtime.TabIndex = 8;
             // 
             // lbltime
@@ -427,18 +429,11 @@
             // lbldate
             // 
             this.lbldate.AutoSize = true;
-            this.lbldate.Location = new System.Drawing.Point(240, 203);
+            this.lbldate.Location = new System.Drawing.Point(162, 203);
             this.lbldate.Name = "lbldate";
             this.lbldate.Size = new System.Drawing.Size(34, 15);
             this.lbldate.TabIndex = 44;
             this.lbldate.Text = "Date:";
-            // 
-            // txtbxdate
-            // 
-            this.txtbxdate.Location = new System.Drawing.Point(239, 221);
-            this.txtbxdate.Name = "txtbxdate";
-            this.txtbxdate.Size = new System.Drawing.Size(215, 23);
-            this.txtbxdate.TabIndex = 43;
             // 
             // btnlist
             // 
@@ -450,14 +445,108 @@
             this.btnlist.UseVisualStyleBackColor = true;
             this.btnlist.Click += new System.EventHandler(this.btnlist_Click);
             // 
+            // cmboxmonth
+            // 
+            this.cmboxmonth.FormattingEnabled = true;
+            this.cmboxmonth.Items.AddRange(new object[] {
+            "January",
+            "February",
+            "March",
+            "April ",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December"});
+            this.cmboxmonth.Location = new System.Drawing.Point(162, 221);
+            this.cmboxmonth.Name = "cmboxmonth";
+            this.cmboxmonth.Size = new System.Drawing.Size(121, 23);
+            this.cmboxmonth.TabIndex = 46;
+            this.cmboxmonth.Text = "select month";
+            // 
+            // cmboxDay
+            // 
+            this.cmboxDay.FormattingEnabled = true;
+            this.cmboxDay.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31"});
+            this.cmboxDay.Location = new System.Drawing.Point(289, 221);
+            this.cmboxDay.Name = "cmboxDay";
+            this.cmboxDay.Size = new System.Drawing.Size(64, 23);
+            this.cmboxDay.TabIndex = 47;
+            this.cmboxDay.Text = "Day";
+            // 
+            // cmboxYear
+            // 
+            this.cmboxYear.AutoCompleteCustomSource.AddRange(new string[] {
+            "2019",
+            "2020",
+            "2021",
+            "2022",
+            "2023",
+            "2024",
+            "2025",
+            "2026",
+            "2027"});
+            this.cmboxYear.FormattingEnabled = true;
+            this.cmboxYear.Items.AddRange(new object[] {
+            "2019",
+            "2020",
+            "2021",
+            "2022",
+            "2023",
+            "2024",
+            "2025",
+            "2026",
+            "2027"});
+            this.cmboxYear.Location = new System.Drawing.Point(359, 221);
+            this.cmboxYear.Name = "cmboxYear";
+            this.cmboxYear.Size = new System.Drawing.Size(97, 23);
+            this.cmboxYear.TabIndex = 48;
+            this.cmboxYear.Text = "Year";
+            // 
             // ContactTracing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(648, 649);
+            this.Controls.Add(this.cmboxYear);
+            this.Controls.Add(this.cmboxDay);
+            this.Controls.Add(this.cmboxmonth);
             this.Controls.Add(this.btnlist);
             this.Controls.Add(this.lbldate);
-            this.Controls.Add(this.txtbxdate);
             this.Controls.Add(this.PicbxLogo);
             this.Controls.Add(this.lblPersonalInfo);
             this.Controls.Add(this.lblCertification);
@@ -553,7 +642,9 @@
         private Label lblPersonalInfo;
         private PictureBox PicbxLogo;
         private Label lbldate;
-        private TextBox txtbxdate;
         private Button btnlist;
+        private ComboBox cmboxmonth;
+        private ComboBox cmboxDay;
+        private ComboBox cmboxYear;
     }
 }

@@ -25,7 +25,11 @@ namespace Contact_Tracing_App
                 all = false;
             else if (string.IsNullOrEmpty(txtbxtime.Text))
                 all = false;
-            else if (string.IsNullOrEmpty(txtbxdate.Text))
+            else if (cmboxmonth.Text=="select month")
+                all = false;
+            else if (cmboxDay.Text == "Day")
+                all = false;
+            else if (cmboxYear.Text == "Year")
                 all = false;
             else if (string.IsNullOrEmpty(txtbxcontactno.Text) || txtbxcontactno.Text.Length != 11)
             {
@@ -58,8 +62,8 @@ namespace Contact_Tracing_App
                 responses.WriteLine("Contact no.: " + txtbxcontactno.Text);
                 responses.WriteLine("Email Address: " + txtbxEmail.Text);
                 responses.WriteLine("Address: " + txtbxaddress.Text);
-                responses.WriteLine("Time of Visit; " + txtbxtime.Text);
-                responses.WriteLine("Date of Visit; " + txtbxdate.Text);
+                responses.WriteLine("Time of Visit: " + txtbxtime.Text);
+                responses.WriteLine("Date of Visit: " + cmboxmonth.Text + " " + cmboxDay.Text + ", " + cmboxYear.Text);
                 //Health Check question 1
                 if (chkbxSymptom1.Checked)
                 {
@@ -126,7 +130,9 @@ namespace Contact_Tracing_App
                 txtbxaddress.Clear();
                 txtbxcontactno.Clear();
                 txtbxtime.Clear();
-                txtbxdate.Clear();
+                cmboxmonth.Text = "select month";
+                cmboxDay.Text = "Day";
+                cmboxYear.Text = "Year";
                 txtbxEmail.Clear();
                 txtbxAge.Clear();
                 //Q1
