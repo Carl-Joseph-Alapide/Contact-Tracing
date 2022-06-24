@@ -144,11 +144,6 @@ namespace Contact_Tracing_App
                 chkbxNo2.Checked = false;
             }
         }
-        private void btnlist_Click(object sender, EventArgs e)
-        {
-            StreamReader Visitors = new StreamReader(@"C:\Users\Carl Joseph\source\repos\Contact Tracing App\Responses\Responses.txt");
-            MessageBox.Show(Visitors.ReadToEnd());
-        }
         string month = "Months";
         private void File()
         {
@@ -285,6 +280,14 @@ namespace Contact_Tracing_App
                 responses.WriteLine("Not Fully Vaccinated");
             }
             responses.Close();
+        }
+        private void btnlist_Click(object sender, EventArgs e)
+        {
+            string month = cmboxMonthsearch.Text;
+            string day = cmboxDaysearch.Text;
+            string year = cmboxYearsearch.Text;
+            StreamReader Visitors = new StreamReader(@"C:\Users\Carl Joseph\source\repos\Contact Tracing App\Responses\" + (month) + " " + (day) + ", " + (year) + " responses.txt");
+            MessageBox.Show(Visitors.ReadToEnd());
         }
     }
 }

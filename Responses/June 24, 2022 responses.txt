@@ -1,0 +1,13 @@
+Respondent 1
+Name: asdas asda asd
+Age: asd
+Contact no.: 12345678901
+Email Address: asdsa
+Address: asdasdasdads
+Time of Visit: asdas
+Date of Visit: June 24, 2022
+Experienced: Sore throat
+Experienced: Loss of taste or smell
+Experienced: Difficulty of breathing
+Did not have a close contact with a probable or confirmed case of COVID-19
+Fully Vaccinated
