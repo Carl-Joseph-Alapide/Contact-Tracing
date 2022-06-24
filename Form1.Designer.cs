@@ -67,7 +67,7 @@
             this.lblPersonalInfo = new System.Windows.Forms.Label();
             this.PicbxLogo = new System.Windows.Forms.PictureBox();
             this.lbldate = new System.Windows.Forms.Label();
-            this.btnlist = new System.Windows.Forms.Button();
+            this.btnsearch = new System.Windows.Forms.Button();
             this.cmboxmonth = new System.Windows.Forms.ComboBox();
             this.cmboxDay = new System.Windows.Forms.ComboBox();
             this.cmboxYear = new System.Windows.Forms.ComboBox();
@@ -430,15 +430,15 @@
             this.lbldate.TabIndex = 44;
             this.lbldate.Text = "Date:";
             // 
-            // btnlist
+            // btnsearch
             // 
-            this.btnlist.Location = new System.Drawing.Point(231, 684);
-            this.btnlist.Name = "btnlist";
-            this.btnlist.Size = new System.Drawing.Size(75, 23);
-            this.btnlist.TabIndex = 45;
-            this.btnlist.Text = "List";
-            this.btnlist.UseVisualStyleBackColor = true;
-            this.btnlist.Click += new System.EventHandler(this.btnlist_Click);
+            this.btnsearch.Location = new System.Drawing.Point(231, 684);
+            this.btnsearch.Name = "btnsearch";
+            this.btnsearch.Size = new System.Drawing.Size(75, 23);
+            this.btnsearch.TabIndex = 45;
+            this.btnsearch.Text = "Search";
+            this.btnsearch.UseVisualStyleBackColor = true;
+            this.btnsearch.Click += new System.EventHandler(this.btnsearch_Click);
             // 
             // cmboxmonth
             // 
@@ -657,7 +657,7 @@
             this.Controls.Add(this.cmboxYear);
             this.Controls.Add(this.cmboxDay);
             this.Controls.Add(this.cmboxmonth);
-            this.Controls.Add(this.btnlist);
+            this.Controls.Add(this.btnsearch);
             this.Controls.Add(this.lbldate);
             this.Controls.Add(this.PicbxLogo);
             this.Controls.Add(this.lblPersonalInfo);
@@ -752,7 +752,7 @@
         private Label lblPersonalInfo;
         private PictureBox PicbxLogo;
         private Label lbldate;
-        private Button btnlist;
+        private Button btnsearch;
         private ComboBox cmboxmonth;
         private ComboBox cmboxDay;
         private ComboBox cmboxYear;
