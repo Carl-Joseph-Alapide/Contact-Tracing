@@ -7,6 +7,9 @@ namespace Contact_Tracing_App
         {
             InitializeComponent();
             btnsubmit.Enabled = false;
+            btnsearch.Enabled = false;
+            cmboxDaysearch.Enabled = false;
+            cmboxYearsearch.Enabled = false;
         }
 
         private void ContactTracing_Load(object sender, EventArgs e)
@@ -288,11 +291,47 @@ namespace Contact_Tracing_App
             responses.WriteLine(" ");
             responses.Close();
         }
+        private void cmboxMonthsearch_SelectedIndexChanged(object sender, EventArgs e)
+        {
+           if (cmboxMonthsearch.Text == "search month")
+            {
+                cmboxDaysearch.Enabled = false;
+            }
+           else
+            {
+                cmboxDaysearch.Enabled=true;
+            }
+
+        }
+
+        private void cmboxDaysearch_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmboxDaysearch.Text == "Day")
+            {
+                cmboxYearsearch.Enabled = false;
+            }
+            else
+            {
+                cmboxYearsearch.Enabled = true;
+            }
+        }
+
+        private void cmboxYearsearch_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmboxYearsearch.Text == "Year")
+            {
+                btnsearch.Enabled = false;
+            }
+            else
+            {
+                btnsearch.Enabled = true;
+            }
+        }
         private void btnsearch_Click(object sender, EventArgs e)
         {
-         string month = cmboxMonthsearch.Text;
-         string day = cmboxDaysearch.Text;
-         string year = cmboxYearsearch.Text;
+            string month = cmboxMonthsearch.Text;
+            string day = cmboxDaysearch.Text;
+            string year = cmboxYearsearch.Text;
             try
             {
                 StreamReader Visitors = new StreamReader(@"C:\Users\Carl Joseph\source\repos\Contact Tracing App\Responses\" + (month) + " " + (day) + ", " + (year) + " responses.txt");

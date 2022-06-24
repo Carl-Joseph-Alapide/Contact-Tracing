@@ -579,6 +579,7 @@
             this.cmboxYearsearch.Size = new System.Drawing.Size(97, 23);
             this.cmboxYearsearch.TabIndex = 53;
             this.cmboxYearsearch.Text = "Year";
+            this.cmboxYearsearch.SelectedIndexChanged += new System.EventHandler(this.cmboxYearsearch_SelectedIndexChanged);
             // 
             // cmboxDaysearch
             // 
@@ -620,6 +621,7 @@
             this.cmboxDaysearch.Size = new System.Drawing.Size(64, 23);
             this.cmboxDaysearch.TabIndex = 52;
             this.cmboxDaysearch.Text = "Day";
+            this.cmboxDaysearch.SelectedIndexChanged += new System.EventHandler(this.cmboxDaysearch_SelectedIndexChanged);
             // 
             // cmboxMonthsearch
             // 
@@ -642,6 +644,7 @@
             this.cmboxMonthsearch.Size = new System.Drawing.Size(121, 23);
             this.cmboxMonthsearch.TabIndex = 51;
             this.cmboxMonthsearch.Text = "select month";
+            this.cmboxMonthsearch.SelectedIndexChanged += new System.EventHandler(this.cmboxMonthsearch_SelectedIndexChanged);
             // 
             // ContactTracing
             // 
