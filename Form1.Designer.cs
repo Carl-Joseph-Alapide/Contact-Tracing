@@ -64,7 +64,6 @@
             this.chkbxNo2 = new System.Windows.Forms.CheckBox();
             this.chkbxyes2 = new System.Windows.Forms.CheckBox();
             this.chkbxCertification = new System.Windows.Forms.CheckBox();
-            this.lblCertification = new System.Windows.Forms.Label();
             this.lblPersonalInfo = new System.Windows.Forms.Label();
             this.PicbxLogo = new System.Windows.Forms.PictureBox();
             this.lbldate = new System.Windows.Forms.Label();
@@ -72,6 +71,11 @@
             this.cmboxmonth = new System.Windows.Forms.ComboBox();
             this.cmboxDay = new System.Windows.Forms.ComboBox();
             this.cmboxYear = new System.Windows.Forms.ComboBox();
+            this.lblPositive = new System.Windows.Forms.Label();
+            this.lblDatesearch = new System.Windows.Forms.Label();
+            this.cmboxYearsearch = new System.Windows.Forms.ComboBox();
+            this.cmboxDaysearch = new System.Windows.Forms.ComboBox();
+            this.cmboxMonthsearch = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.PicbxLogo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -100,7 +104,7 @@
             // 
             // btnsubmit
             // 
-            this.btnsubmit.Location = new System.Drawing.Point(206, 590);
+            this.btnsubmit.Location = new System.Drawing.Point(231, 523);
             this.btnsubmit.Name = "btnsubmit";
             this.btnsubmit.Size = new System.Drawing.Size(75, 23);
             this.btnsubmit.TabIndex = 7;
@@ -327,15 +331,15 @@
             this.LblQ2.AutoSize = true;
             this.LblQ2.Location = new System.Drawing.Point(12, 385);
             this.LblQ2.Name = "LblQ2";
-            this.LblQ2.Size = new System.Drawing.Size(429, 15);
+            this.LblQ2.Size = new System.Drawing.Size(260, 30);
             this.LblQ2.TabIndex = 33;
-            this.LblQ2.Text = "Have you been in close contact with a probable or confirmed case of COVID-19?";
+            this.LblQ2.Text = "Have you been in close contact with a probable \r\nor confirmed case of COVID-19?";
             this.LblQ2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // chkbxyes1
             // 
             this.chkbxyes1.AutoSize = true;
-            this.chkbxyes1.Location = new System.Drawing.Point(14, 415);
+            this.chkbxyes1.Location = new System.Drawing.Point(74, 430);
             this.chkbxyes1.Name = "chkbxyes1";
             this.chkbxyes1.Size = new System.Drawing.Size(43, 19);
             this.chkbxyes1.TabIndex = 34;
@@ -346,7 +350,7 @@
             // chkbxNo1
             // 
             this.chkbxNo1.AutoSize = true;
-            this.chkbxNo1.Location = new System.Drawing.Point(63, 415);
+            this.chkbxNo1.Location = new System.Drawing.Point(123, 430);
             this.chkbxNo1.Name = "chkbxNo1";
             this.chkbxNo1.Size = new System.Drawing.Size(42, 19);
             this.chkbxNo1.TabIndex = 35;
@@ -357,7 +361,7 @@
             // LblQ3
             // 
             this.LblQ3.AutoSize = true;
-            this.LblQ3.Location = new System.Drawing.Point(12, 453);
+            this.LblQ3.Location = new System.Drawing.Point(312, 391);
             this.LblQ3.Name = "LblQ3";
             this.LblQ3.Size = new System.Drawing.Size(141, 15);
             this.LblQ3.TabIndex = 36;
@@ -367,7 +371,7 @@
             // chkbxNo2
             // 
             this.chkbxNo2.AutoSize = true;
-            this.chkbxNo2.Location = new System.Drawing.Point(61, 487);
+            this.chkbxNo2.Location = new System.Drawing.Point(386, 430);
             this.chkbxNo2.Name = "chkbxNo2";
             this.chkbxNo2.Size = new System.Drawing.Size(42, 19);
             this.chkbxNo2.TabIndex = 38;
@@ -378,7 +382,7 @@
             // chkbxyes2
             // 
             this.chkbxyes2.AutoSize = true;
-            this.chkbxyes2.Location = new System.Drawing.Point(12, 487);
+            this.chkbxyes2.Location = new System.Drawing.Point(337, 430);
             this.chkbxyes2.Name = "chkbxyes2";
             this.chkbxyes2.Size = new System.Drawing.Size(43, 19);
             this.chkbxyes2.TabIndex = 37;
@@ -389,23 +393,14 @@
             // chkbxCertification
             // 
             this.chkbxCertification.AutoSize = true;
-            this.chkbxCertification.Location = new System.Drawing.Point(12, 532);
+            this.chkbxCertification.Location = new System.Drawing.Point(12, 467);
             this.chkbxCertification.Name = "chkbxCertification";
-            this.chkbxCertification.Size = new System.Drawing.Size(406, 19);
+            this.chkbxCertification.Size = new System.Drawing.Size(519, 34);
             this.chkbxCertification.TabIndex = 39;
-            this.chkbxCertification.Text = "I hereby certify that the information given is true, correct, and complete;";
+            this.chkbxCertification.Text = "I hereby certify that the information given is true, correct, and complete;and th" +
+    "at any falsified \r\nrespone may have serious consequences.\r\n";
             this.chkbxCertification.UseVisualStyleBackColor = true;
             this.chkbxCertification.CheckedChanged += new System.EventHandler(this.chkbxCertification_CheckedChanged);
-            // 
-            // lblCertification
-            // 
-            this.lblCertification.AutoSize = true;
-            this.lblCertification.Location = new System.Drawing.Point(28, 554);
-            this.lblCertification.Name = "lblCertification";
-            this.lblCertification.Size = new System.Drawing.Size(337, 15);
-            this.lblCertification.TabIndex = 40;
-            this.lblCertification.Text = "and that any falsified respone may have serious consequences.";
-            this.lblCertification.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // lblPersonalInfo
             // 
@@ -419,7 +414,7 @@
             // PicbxLogo
             // 
             this.PicbxLogo.Image = ((System.Drawing.Image)(resources.GetObject("PicbxLogo.Image")));
-            this.PicbxLogo.Location = new System.Drawing.Point(475, 61);
+            this.PicbxLogo.Location = new System.Drawing.Point(462, 61);
             this.PicbxLogo.Name = "PicbxLogo";
             this.PicbxLogo.Size = new System.Drawing.Size(161, 157);
             this.PicbxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -437,7 +432,7 @@
             // 
             // btnlist
             // 
-            this.btnlist.Location = new System.Drawing.Point(452, 590);
+            this.btnlist.Location = new System.Drawing.Point(231, 684);
             this.btnlist.Name = "btnlist";
             this.btnlist.Size = new System.Drawing.Size(75, 23);
             this.btnlist.TabIndex = 45;
@@ -537,11 +532,128 @@
             this.cmboxYear.TabIndex = 48;
             this.cmboxYear.Text = "Year";
             // 
+            // lblPositive
+            // 
+            this.lblPositive.AutoSize = true;
+            this.lblPositive.Location = new System.Drawing.Point(5, 575);
+            this.lblPositive.Name = "lblPositive";
+            this.lblPositive.Size = new System.Drawing.Size(348, 15);
+            this.lblPositive.TabIndex = 49;
+            this.lblPositive.Text = "In case a COVID-19 positive person has visited the establishment:";
+            // 
+            // lblDatesearch
+            // 
+            this.lblDatesearch.AutoSize = true;
+            this.lblDatesearch.Location = new System.Drawing.Point(5, 601);
+            this.lblDatesearch.Name = "lblDatesearch";
+            this.lblDatesearch.Size = new System.Drawing.Size(454, 15);
+            this.lblDatesearch.TabIndex = 50;
+            this.lblDatesearch.Text = "Select the date when you wish to see the list of people who visited the establish" +
+    "ment.\r\n";
+            // 
+            // cmboxYearsearch
+            // 
+            this.cmboxYearsearch.AutoCompleteCustomSource.AddRange(new string[] {
+            "2019",
+            "2020",
+            "2021",
+            "2022",
+            "2023",
+            "2024",
+            "2025",
+            "2026",
+            "2027"});
+            this.cmboxYearsearch.FormattingEnabled = true;
+            this.cmboxYearsearch.Items.AddRange(new object[] {
+            "2019",
+            "2020",
+            "2021",
+            "2022",
+            "2023",
+            "2024",
+            "2025",
+            "2026",
+            "2027"});
+            this.cmboxYearsearch.Location = new System.Drawing.Point(329, 642);
+            this.cmboxYearsearch.Name = "cmboxYearsearch";
+            this.cmboxYearsearch.Size = new System.Drawing.Size(97, 23);
+            this.cmboxYearsearch.TabIndex = 53;
+            this.cmboxYearsearch.Text = "Year";
+            // 
+            // cmboxDaysearch
+            // 
+            this.cmboxDaysearch.FormattingEnabled = true;
+            this.cmboxDaysearch.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31"});
+            this.cmboxDaysearch.Location = new System.Drawing.Point(259, 642);
+            this.cmboxDaysearch.Name = "cmboxDaysearch";
+            this.cmboxDaysearch.Size = new System.Drawing.Size(64, 23);
+            this.cmboxDaysearch.TabIndex = 52;
+            this.cmboxDaysearch.Text = "Day";
+            // 
+            // cmboxMonthsearch
+            // 
+            this.cmboxMonthsearch.FormattingEnabled = true;
+            this.cmboxMonthsearch.Items.AddRange(new object[] {
+            "January",
+            "February",
+            "March",
+            "April ",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December"});
+            this.cmboxMonthsearch.Location = new System.Drawing.Point(132, 642);
+            this.cmboxMonthsearch.Name = "cmboxMonthsearch";
+            this.cmboxMonthsearch.Size = new System.Drawing.Size(121, 23);
+            this.cmboxMonthsearch.TabIndex = 51;
+            this.cmboxMonthsearch.Text = "select month";
+            // 
             // ContactTracing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(648, 649);
+            this.AutoScroll = true;
+            this.ClientSize = new System.Drawing.Size(648, 749);
+            this.Controls.Add(this.cmboxYearsearch);
+            this.Controls.Add(this.cmboxDaysearch);
+            this.Controls.Add(this.cmboxMonthsearch);
+            this.Controls.Add(this.lblDatesearch);
+            this.Controls.Add(this.lblPositive);
             this.Controls.Add(this.cmboxYear);
             this.Controls.Add(this.cmboxDay);
             this.Controls.Add(this.cmboxmonth);
@@ -549,7 +661,6 @@
             this.Controls.Add(this.lbldate);
             this.Controls.Add(this.PicbxLogo);
             this.Controls.Add(this.lblPersonalInfo);
-            this.Controls.Add(this.lblCertification);
             this.Controls.Add(this.chkbxCertification);
             this.Controls.Add(this.chkbxNo2);
             this.Controls.Add(this.chkbxyes2);
@@ -638,7 +749,6 @@
         private CheckBox chkbxNo2;
         private CheckBox chkbxyes2;
         private CheckBox chkbxCertification;
-        private Label lblCertification;
         private Label lblPersonalInfo;
         private PictureBox PicbxLogo;
         private Label lbldate;
@@ -646,5 +756,10 @@
         private ComboBox cmboxmonth;
         private ComboBox cmboxDay;
         private ComboBox cmboxYear;
+        private Label lblPositive;
+        private Label lblDatesearch;
+        private ComboBox cmboxYearsearch;
+        private ComboBox cmboxDaysearch;
+        private ComboBox cmboxMonthsearch;
     }
 }
