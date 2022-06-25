@@ -336,6 +336,7 @@ namespace Contact_Tracing_App
             {
                 StreamReader Visitors = new StreamReader(@"C:\Users\Carl Joseph\source\repos\Contact Tracing App\Responses\" + (month) + " " + (day) + ", " + (year) + " responses.txt");
                 MessageBox.Show(Visitors.ReadToEnd());
+                Visitors.Close();
             }
             catch (Exception)
             {

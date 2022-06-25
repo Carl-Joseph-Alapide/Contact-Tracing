@@ -1,0 +1,36 @@
+Respondent 2
+ 
+Personal Information
+Name: Patrick zamora Santiago
+Age: 12
+Contact no.: 09123456789
+Email Address: iu@gmail.com
+Address: Caloocan
+Time of Visit: 5 pm
+Date of Visit: January 4, 2022
+ 
+Health Check
+Have been in close contact with a probable or confirmed case of COVID-19
+Fully Vaccinated
+ 
+------------------
+ 
+Respondent 3
+ 
+Personal Information
+Name: Justin Dela cruz Santos
+Age: 14
+Contact no.: 09123456789
+Email Address: hg@gmail.com
+Address: Caloocan
+Time of Visit: 5 pm
+Date of Visit: January 4, 2022
+ 
+Health Check
+Experienced: Cough and/or Colds
+Experienced: Diarrhea
+Did not have a close contact with a probable or confirmed case of COVID-19
+Fully Vaccinated
+ 
+------------------
+ 
