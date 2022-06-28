@@ -343,5 +343,13 @@ namespace Contact_Tracing_App
                 MessageBox.Show("There's no visitor on this date");
             }
         }
+
+        private void btnQRcode_Click(object sender, EventArgs e)
+        {
+      
+            this.Hide();
+            FormQRcode formQRcode = new FormQRcode();
+            formQRcode.Show();
+        }
     }
 }

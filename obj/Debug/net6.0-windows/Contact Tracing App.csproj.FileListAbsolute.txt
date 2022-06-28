@@ -16,3 +16,4 @@ C:\Users\Carl Joseph\source\repos\Contact Tracing App\obj\Debug\net6.0-windows\C
 C:\Users\Carl Joseph\source\repos\Contact Tracing App\obj\Debug\net6.0-windows\Contact Tracing App.genruntimeconfig.cache
 C:\Users\Carl Joseph\source\repos\Contact Tracing App\obj\Debug\net6.0-windows\ref\Contact Tracing App.dll
 C:\Users\Carl Joseph\source\repos\Contact Tracing App\obj\Debug\net6.0-windows\Contact_Tracing_App.Properties.Resources.resources
+C:\Users\Carl Joseph\source\repos\Contact Tracing App\obj\Debug\net6.0-windows\Contact_Tracing_App.FormQRcode.resources

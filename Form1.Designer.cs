@@ -76,6 +76,7 @@
             this.cmboxYearsearch = new System.Windows.Forms.ComboBox();
             this.cmboxDaysearch = new System.Windows.Forms.ComboBox();
             this.cmboxMonthsearch = new System.Windows.Forms.ComboBox();
+            this.btnQRcode = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.PicbxLogo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -432,7 +433,7 @@
             // 
             // btnsearch
             // 
-            this.btnsearch.Location = new System.Drawing.Point(231, 684);
+            this.btnsearch.Location = new System.Drawing.Point(228, 713);
             this.btnsearch.Name = "btnsearch";
             this.btnsearch.Size = new System.Drawing.Size(75, 23);
             this.btnsearch.TabIndex = 45;
@@ -535,7 +536,7 @@
             // lblPositive
             // 
             this.lblPositive.AutoSize = true;
-            this.lblPositive.Location = new System.Drawing.Point(5, 575);
+            this.lblPositive.Location = new System.Drawing.Point(2, 604);
             this.lblPositive.Name = "lblPositive";
             this.lblPositive.Size = new System.Drawing.Size(348, 15);
             this.lblPositive.TabIndex = 49;
@@ -544,7 +545,7 @@
             // lblDatesearch
             // 
             this.lblDatesearch.AutoSize = true;
-            this.lblDatesearch.Location = new System.Drawing.Point(5, 601);
+            this.lblDatesearch.Location = new System.Drawing.Point(2, 630);
             this.lblDatesearch.Name = "lblDatesearch";
             this.lblDatesearch.Size = new System.Drawing.Size(454, 15);
             this.lblDatesearch.TabIndex = 50;
@@ -574,7 +575,7 @@
             "2025",
             "2026",
             "2027"});
-            this.cmboxYearsearch.Location = new System.Drawing.Point(329, 642);
+            this.cmboxYearsearch.Location = new System.Drawing.Point(326, 671);
             this.cmboxYearsearch.Name = "cmboxYearsearch";
             this.cmboxYearsearch.Size = new System.Drawing.Size(97, 23);
             this.cmboxYearsearch.TabIndex = 53;
@@ -616,7 +617,7 @@
             "29",
             "30",
             "31"});
-            this.cmboxDaysearch.Location = new System.Drawing.Point(259, 642);
+            this.cmboxDaysearch.Location = new System.Drawing.Point(256, 671);
             this.cmboxDaysearch.Name = "cmboxDaysearch";
             this.cmboxDaysearch.Size = new System.Drawing.Size(64, 23);
             this.cmboxDaysearch.TabIndex = 52;
@@ -639,12 +640,22 @@
             "October",
             "November",
             "December"});
-            this.cmboxMonthsearch.Location = new System.Drawing.Point(132, 642);
+            this.cmboxMonthsearch.Location = new System.Drawing.Point(129, 671);
             this.cmboxMonthsearch.Name = "cmboxMonthsearch";
             this.cmboxMonthsearch.Size = new System.Drawing.Size(121, 23);
             this.cmboxMonthsearch.TabIndex = 51;
             this.cmboxMonthsearch.Text = "select month";
             this.cmboxMonthsearch.SelectedIndexChanged += new System.EventHandler(this.cmboxMonthsearch_SelectedIndexChanged);
+            // 
+            // btnQRcode
+            // 
+            this.btnQRcode.Location = new System.Drawing.Point(143, 551);
+            this.btnQRcode.Name = "btnQRcode";
+            this.btnQRcode.Size = new System.Drawing.Size(237, 50);
+            this.btnQRcode.TabIndex = 54;
+            this.btnQRcode.Text = "Fill out via QR code";
+            this.btnQRcode.UseVisualStyleBackColor = true;
+            this.btnQRcode.Click += new System.EventHandler(this.btnQRcode_Click);
             // 
             // ContactTracing
             // 
@@ -652,6 +663,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(648, 749);
+            this.Controls.Add(this.btnQRcode);
             this.Controls.Add(this.cmboxYearsearch);
             this.Controls.Add(this.cmboxDaysearch);
             this.Controls.Add(this.cmboxMonthsearch);
@@ -764,5 +776,6 @@
         private ComboBox cmboxYearsearch;
         private ComboBox cmboxDaysearch;
         private ComboBox cmboxMonthsearch;
+        private Button btnQRcode;
     }
 }
