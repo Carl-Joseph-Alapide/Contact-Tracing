@@ -1,8 +1,44 @@
 {
   "version": 2,
-  "dgSpecHash": "6wsJI8U5OKgZlkTUjBxbCONfKWR4hfLxiU5Va7ogT+ZZQrvdh5lsvKG6gfmetO8Nja8P5hfxSaFvVbd9qzIzbQ==",
+  "dgSpecHash": "ia5EIQgBj9qalOKdA9FtXzDBwN9AMjvEzwQZqi6lCK4MV5Vc5o7FGgOtXMR7A0jSYyIlGcUjfVKNRI+PzIyCcw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Carl Joseph\\source\\repos\\Contact Tracing App\\Contact Tracing App.csproj",
-  "expectedPackageFiles": [],
-  "logs": []
+  "expectedPackageFiles": [
+    "C:\\Users\\Carl Joseph\\.nuget\\packages\\aforge\\2.2.5\\aforge.2.2.5.nupkg.sha512",
+    "C:\\Users\\Carl Joseph\\.nuget\\packages\\aforge.video\\2.2.5\\aforge.video.2.2.5.nupkg.sha512",
+    "C:\\Users\\Carl Joseph\\.nuget\\packages\\aforge.video.directshow\\2.2.5\\aforge.video.directshow.2.2.5.nupkg.sha512",
+    "C:\\Users\\Carl Joseph\\.nuget\\packages\\zxing.net\\0.16.8\\zxing.net.0.16.8.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'AForge 2.2.5' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "AForge",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'AForge.Video 2.2.5' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "AForge.Video",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'AForge.Video.DirectShow 2.2.5' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "AForge.Video.DirectShow",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    }
+  ]
 }
