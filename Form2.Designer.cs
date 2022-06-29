@@ -83,6 +83,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormQRcode";
             this.Text = "Trace It";
+            this.Load += new System.EventHandler(this.FormQRcode_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pcbxScan)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
