@@ -10,6 +10,9 @@ using System.Windows.Forms;
 using AForge.Video;
 using AForge.Video.DirectShow;
 using ZXing;
+using ZXing.Common;
+using ZXing.Aztec;
+using ZXing.QrCode;
 
 namespace Contact_Tracing_App
 {
@@ -54,8 +57,8 @@ namespace Contact_Tracing_App
         {
             if (pcbxScan.Image != null)
             {
-                BarcodeReader barcode = new BarcodeReader();  
-                Result Result = barcode.decode((Bitmap)pcbxScan.Image);
+                QRCodeReader reader = new QRCodeReader();
+                Result Result = reader.decode (image: pcbxScan.Image as BinaryBitmap );
                 if (Result != null)
                 {
                    txtbxDecoded.Text = Result.ToString();
