@@ -28,11 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormQRcode));
             this.pcbxScan = new System.Windows.Forms.PictureBox();
             this.lblCamera = new System.Windows.Forms.Label();
             this.cmboxCamera = new System.Windows.Forms.ComboBox();
             this.btnScan = new System.Windows.Forms.Button();
+            this.tmrScan = new System.Windows.Forms.Timer(this.components);
+            this.txtbxDecoded = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pcbxScan)).BeginInit();
             this.SuspendLayout();
             // 
@@ -70,12 +73,27 @@
             this.btnScan.TabIndex = 3;
             this.btnScan.Text = "Scan";
             this.btnScan.UseVisualStyleBackColor = true;
+            this.btnScan.Click += new System.EventHandler(this.btnScan_Click);
+            // 
+            // tmrScan
+            // 
+            this.tmrScan.Interval = 1000;
+            this.tmrScan.Tick += new System.EventHandler(this.tmrScan_Tick);
+            // 
+            // txtbxDecoded
+            // 
+            this.txtbxDecoded.Location = new System.Drawing.Point(436, 79);
+            this.txtbxDecoded.Multiline = true;
+            this.txtbxDecoded.Name = "txtbxDecoded";
+            this.txtbxDecoded.Size = new System.Drawing.Size(201, 169);
+            this.txtbxDecoded.TabIndex = 4;
             // 
             // FormQRcode
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(474, 453);
+            this.ClientSize = new System.Drawing.Size(687, 453);
+            this.Controls.Add(this.txtbxDecoded);
             this.Controls.Add(this.btnScan);
             this.Controls.Add(this.cmboxCamera);
             this.Controls.Add(this.lblCamera);
@@ -83,6 +101,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormQRcode";
             this.Text = "Trace It";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormQRcode_FormClosing);
             this.Load += new System.EventHandler(this.FormQRcode_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pcbxScan)).EndInit();
             this.ResumeLayout(false);
@@ -96,5 +115,7 @@
         private Label lblCamera;
         private ComboBox cmboxCamera;
         private Button btnScan;
+        private System.Windows.Forms.Timer tmrScan;
+        private TextBox txtbxDecoded;
     }
 }
