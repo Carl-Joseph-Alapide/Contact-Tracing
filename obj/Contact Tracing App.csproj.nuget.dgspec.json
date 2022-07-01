@@ -44,6 +44,10 @@
               "target": "Package",
               "version": "[2.2.5, )"
             },
+            "BarCode": {
+              "target": "Package",
+              "version": "[2022.5.5918, )"
+            },
             "ZXing.Net": {
               "target": "Package",
               "version": "[0.16.8, )"
@@ -67,7 +71,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }

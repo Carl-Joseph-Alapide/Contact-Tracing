@@ -22,3 +22,4 @@ C:\Users\Carl Joseph\source\repos\Contact Tracing App\bin\Debug\net6.0-windows\A
 C:\Users\Carl Joseph\source\repos\Contact Tracing App\bin\Debug\net6.0-windows\AForge.Video.DirectShow.dll
 C:\Users\Carl Joseph\source\repos\Contact Tracing App\bin\Debug\net6.0-windows\zxing.dll
 C:\Users\Carl Joseph\source\repos\Contact Tracing App\obj\Debug\net6.0-windows\Contact Tracing App.csproj.CopyComplete
+C:\Users\Carl Joseph\source\repos\Contact Tracing App\bin\Debug\net6.0-windows\IronBarCode.dll

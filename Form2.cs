@@ -9,10 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using AForge.Video;
 using AForge.Video.DirectShow;
-using ZXing;
-using ZXing.Common;
-using ZXing.Aztec;
-using ZXing.QrCode;
+using IronBarCode;
 
 namespace Contact_Tracing_App
 {
@@ -55,18 +52,18 @@ namespace Contact_Tracing_App
 
         private void tmrScan_Tick(object sender, EventArgs e)
         {
+
             if (pcbxScan.Image != null)
             {
-                QRCodeReader reader = new QRCodeReader();
-                Result Result = reader.decode (image: pcbxScan.Image as BinaryBitmap );
-                if (Result != null)
+                BarcodeResult QRcode = IronBarCode.BarcodeReader.ReadASingleBarcode(pcbxScan.Image);
+                if (QRcode != null)
                 {
-                   txtbxDecoded.Text = Result.ToString();
-                    tmrScan.Stop();
-                    if(Device.IsRunning)
-                    {
-                        Device.Stop();
-                    }
+                 txtbxDecoded.Text = QRcode.ToString();
+                  tmrScan.Stop();
+                  if(Device.IsRunning)
+                  {
+                     Device.Stop();
+                  }
                 }
 
             }

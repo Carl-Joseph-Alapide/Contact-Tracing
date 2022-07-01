@@ -1,12 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "ia5EIQgBj9qalOKdA9FtXzDBwN9AMjvEzwQZqi6lCK4MV5Vc5o7FGgOtXMR7A0jSYyIlGcUjfVKNRI+PzIyCcw==",
+  "dgSpecHash": "PO4mgMeBJkuDZAW/enOOQd9d9+dgOHOKz7LG5lIui5+q07SgIgXwj/zRLaaiX8d6BlpVs0zyKFplQpfmarCN+A==",
   "success": true,
   "projectFilePath": "C:\\Users\\Carl Joseph\\source\\repos\\Contact Tracing App\\Contact Tracing App.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Carl Joseph\\.nuget\\packages\\aforge\\2.2.5\\aforge.2.2.5.nupkg.sha512",
     "C:\\Users\\Carl Joseph\\.nuget\\packages\\aforge.video\\2.2.5\\aforge.video.2.2.5.nupkg.sha512",
     "C:\\Users\\Carl Joseph\\.nuget\\packages\\aforge.video.directshow\\2.2.5\\aforge.video.directshow.2.2.5.nupkg.sha512",
+    "C:\\Users\\Carl Joseph\\.nuget\\packages\\barcode\\2022.5.5918\\barcode.2022.5.5918.nupkg.sha512",
+    "C:\\Users\\Carl Joseph\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
+    "C:\\Users\\Carl Joseph\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
+    "C:\\Users\\Carl Joseph\\.nuget\\packages\\system.drawing.common\\5.0.2\\system.drawing.common.5.0.2.nupkg.sha512",
     "C:\\Users\\Carl Joseph\\.nuget\\packages\\zxing.net\\0.16.8\\zxing.net.0.16.8.nupkg.sha512"
   ],
   "logs": [
