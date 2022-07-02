@@ -36,6 +36,7 @@
             this.btnScan = new System.Windows.Forms.Button();
             this.tmrScan = new System.Windows.Forms.Timer(this.components);
             this.txtbxDecoded = new System.Windows.Forms.TextBox();
+            this.btnStop = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pcbxScan)).BeginInit();
             this.SuspendLayout();
             // 
@@ -78,7 +79,6 @@
             // tmrScan
             // 
             this.tmrScan.Interval = 1000;
-            this.tmrScan.Tick += new System.EventHandler(this.tmrScan_Tick);
             // 
             // txtbxDecoded
             // 
@@ -88,11 +88,22 @@
             this.txtbxDecoded.Size = new System.Drawing.Size(201, 169);
             this.txtbxDecoded.TabIndex = 4;
             // 
+            // btnStop
+            // 
+            this.btnStop.Location = new System.Drawing.Point(336, 385);
+            this.btnStop.Name = "btnStop";
+            this.btnStop.Size = new System.Drawing.Size(75, 23);
+            this.btnStop.TabIndex = 5;
+            this.btnStop.Text = "Stop";
+            this.btnStop.UseVisualStyleBackColor = true;
+            this.btnStop.Click += new System.EventHandler(this.btnStop_Click);
+            // 
             // FormQRcode
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(687, 453);
+            this.Controls.Add(this.btnStop);
             this.Controls.Add(this.txtbxDecoded);
             this.Controls.Add(this.btnScan);
             this.Controls.Add(this.cmboxCamera);
@@ -101,7 +112,6 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormQRcode";
             this.Text = "Trace It";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormQRcode_FormClosing);
             this.Load += new System.EventHandler(this.FormQRcode_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pcbxScan)).EndInit();
             this.ResumeLayout(false);
@@ -117,5 +127,6 @@
         private Button btnScan;
         private System.Windows.Forms.Timer tmrScan;
         private TextBox txtbxDecoded;
+        private Button btnStop;
     }
 }

@@ -13,6 +13,16 @@
     <PackageReference Include="AForge.Video.DirectShow" Version="2.2.5" />
     <PackageReference Include="BarCode" Version="2022.5.5918" />
     <PackageReference Include="ZXing.Net" Version="0.16.8" />
+    <PackageReference Include="ZXing.Net.Bindings.ZKWeb.System.Drawing" Version="0.16.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="BasselTech CamCapture">
+      <HintPath>basseltech dll\BasselTech CamCapture.dll</HintPath>
+    </Reference>
+    <Reference Include="MessagingToolkit.Barcode">
+      <HintPath>basseltech dll\MessagingToolkit.Barcode.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
   <ItemGroup>
