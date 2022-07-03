@@ -348,8 +348,8 @@ namespace Contact_Tracing_App
         {
       
             this.Hide();
-            FormQRcode formQRcode = new FormQRcode();
-            formQRcode.Show();
+            formQRcode QR = new formQRcode();
+            QR.Show();
         }
     }
 }

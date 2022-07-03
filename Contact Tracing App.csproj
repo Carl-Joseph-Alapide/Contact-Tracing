@@ -23,6 +23,9 @@
     <Reference Include="MessagingToolkit.Barcode">
       <HintPath>basseltech dll\MessagingToolkit.Barcode.dll</HintPath>
     </Reference>
+    <Reference Include="MessagingToolkit.QRCode">
+      <HintPath>basseltech dll\MessagingToolkit.QRCode.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
   <ItemGroup>

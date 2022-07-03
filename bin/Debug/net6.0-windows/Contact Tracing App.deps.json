@@ -13,7 +13,7 @@
           "ZXing.Net": "0.16.8",
           "ZXing.Net.Bindings.ZKWeb.System.Drawing": "0.16.6",
           "BasselTech CamCapture": "1.0.0.0",
-          "MessagingToolkit.Barcode": "1.8.3.0"
+          "MessagingToolkit.QRCode": "1.0.3541.23206"
         },
         "runtime": {
           "Contact Tracing App.dll": {}
@@ -323,11 +323,11 @@
           }
         }
       },
-      "MessagingToolkit.Barcode/1.8.3.0": {
+      "MessagingToolkit.QRCode/1.0.3541.23206": {
         "runtime": {
-          "MessagingToolkit.Barcode.dll": {
-            "assemblyVersion": "1.8.3.0",
-            "fileVersion": "1.8.3.0"
+          "MessagingToolkit.QRCode.dll": {
+            "assemblyVersion": "1.0.3541.23206",
+            "fileVersion": "1.0.3541.23206"
           }
         }
       }
@@ -603,7 +603,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "MessagingToolkit.Barcode/1.8.3.0": {
+    "MessagingToolkit.QRCode/1.0.3541.23206": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
