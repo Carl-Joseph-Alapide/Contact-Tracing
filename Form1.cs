@@ -1,23 +1,72 @@
-namespace Contact_Tracing_App
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace WindowsFormsApp2
 {
-    public partial class ContactTracing : Form
+    public partial class formTraceIt : Form
     {
+        public static formTraceIt Infos;
+        public TextBox Lastname;
+        public TextBox Firstname;
+        public TextBox Middlename;
+        public TextBox Age;
+        public TextBox Mobile;
+        public TextBox Email;
+        public TextBox Address;
+        public TextBox Zip;
+        public TextBox Time;
+        public ComboBox Month;
+        public ComboBox Day;
+        public ComboBox Year;
+        public Button Scanner;
         byte counter = 0;
-        public ContactTracing()
+        public formTraceIt()
         {
             InitializeComponent();
-            btnsubmit.Enabled = false;
-            btnsearch.Enabled = false;
-            cmboxDaysearch.Enabled = false;
-            cmboxYearsearch.Enabled = false;
+            Infos = this;
+            //for transfering tools to another form
+            Lastname = txtbxLastName;
+            Firstname = txtbxFirstName;
+            Middlename = txtbxMiddleName;
+            Age = txtbxAge;
+            Mobile = txtbxContact;
+            Email = txtbxEmail;
+            Address = txtbxAddress;
+            Zip = txtbxZip;
+            Time = txtbxtime;
+            Month = cmbxMonth;
+            Day = cmbxDay;
+            Year = cmbxYear;
+            Scanner = btnQr;
+
+            //Startup
+            btnSubmit.Enabled = false;
         }
 
-        private void ContactTracing_Load(object sender, EventArgs e)
+        private void btnQr_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Trace it", "Welcome");
+            
+            formQR QR = new formQR();
+            QR.Show();
+            btnQr.Enabled = false;
         }
-        private void btnsubmit_Click(object sender, EventArgs e)
+
+        private void formTraceIt_Load(object sender, EventArgs e)
         {
+            MessageBox.Show("Welcome to Trace It", "Greetings");
+        }
+
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+
             bool all = true;
             //must complete the info before submitting
             if (string.IsNullOrEmpty(txtbxFirstName.Text))
@@ -28,24 +77,29 @@ namespace Contact_Tracing_App
                 all = false;
             else if (string.IsNullOrEmpty(txtbxtime.Text))
                 all = false;
-            else if (cmboxmonth.Text == "select month")
+            else if (cmbxMonth.Text == "select month")
                 all = false;
-            else if (cmboxDay.Text == "Day")
+            else if (cmbxDay.Text == "Day")
                 all = false;
-            else if (cmboxYear.Text == "Year")
+            else if (cmbxYear.Text == "Year")
                 all = false;
-            else if (string.IsNullOrEmpty(txtbxcontactno.Text) || txtbxcontactno.Text.Length != 11)
+            else if (string.IsNullOrEmpty(txtbxContact.Text) || txtbxContact.Text.Length != 11)
             {
                 all = false;
                 MessageBox.Show("Contact number should be 11 Digits");
             }
-            else if (string.IsNullOrEmpty(txtbxaddress.Text))
+            else if (string.IsNullOrEmpty(txtbxAddress.Text))
                 all = false;
+            else if (string.IsNullOrEmpty(txtbxZip.Text) || txtbxZip.Text.Length != 4)
+            {
+                all = false;
+                MessageBox.Show("The Zip Code you entered is incorrect");
+            }
             else if (string.IsNullOrEmpty(txtbxAge.Text))
                 all = false;
-            else if ((!chkbxyes1.Checked) && (!chkbxNo1.Checked))
+            else if ((!chkbxYes1.Checked) && (!chkbxNo1.Checked))
                 all = false;
-            else if ((!chkbxyes2.Checked) && (!chkbxNo2.Checked))
+            else if ((!chkbxYes2.Checked) && (!chkbxNo2.Checked))
                 all = false;
             if (all)
             {
@@ -63,12 +117,13 @@ namespace Contact_Tracing_App
                 txtbxLastName.Clear();
                 txtbxFirstName.Clear();
                 txtbxMiddleName.Clear();
-                txtbxaddress.Clear();
-                txtbxcontactno.Clear();
+                txtbxAddress.Clear();
+                txtbxZip.Clear();
+                txtbxContact.Clear();
                 txtbxtime.Clear();
-                cmboxmonth.Text = "select month";
-                cmboxDay.Text = "Day";
-                cmboxYear.Text = "Year";
+                cmbxMonth.Text = "select month";
+                cmbxDay.Text = "Day";
+                cmbxYear.Text = "Year";
                 txtbxEmail.Clear();
                 txtbxAge.Clear();
                 //Q1
@@ -82,45 +137,46 @@ namespace Contact_Tracing_App
                 chkbxSymptom8.Checked = false;
                 chkbxSymptom9.Checked = false;
                 //Q2 and 3
-                chkbxyes1.Checked = false;
-                chkbxyes2.Checked = false;
+                chkbxYes1.Checked = false;
+                chkbxYes2.Checked = false;
                 chkbxNo1.Checked = false;
                 chkbxNo2.Checked = false;
                 //confirmation
-                chkbxCertification.Checked = false;
+                chkbxConfirmation.Checked = false;
             }
+
         }
 
-        private void chkbxCertification_CheckedChanged(object sender, EventArgs e)
+        private void chkbxConfirmation_CheckedChanged(object sender, EventArgs e)
         {
             //must accept the terms before submitting
-            if (chkbxCertification.Checked)
-                btnsubmit.Enabled = true;
+            if (chkbxConfirmation.Checked)
+                btnSubmit.Enabled = true;
             else
-                btnsubmit.Enabled = false;
+                btnSubmit.Enabled = false;
         }
 
-        private void chkbxyes1_CheckedChanged(object sender, EventArgs e)
+        private void chkbxYes1_CheckedChanged(object sender, EventArgs e)
         {
-            if (chkbxyes1.Checked)
+            if (chkbxYes1.Checked)
             {
                 chkbxNo1.Checked = false;
             }
             else if (chkbxNo1.Checked)
             {
-                chkbxyes1.Checked = false;
+                chkbxYes1.Checked = false;
             }
         }
 
-        private void chkbxyes2_CheckedChanged(object sender, EventArgs e)
+        private void chkbxYes2_CheckedChanged(object sender, EventArgs e)
         {
-            if (chkbxyes2.Checked)
+            if (chkbxYes2.Checked)
             {
                 chkbxNo2.Checked = false;
             }
             else if (chkbxNo2.Checked)
             {
-                chkbxyes2.Checked = false;
+                chkbxYes2.Checked = false;
             }
         }
 
@@ -128,9 +184,9 @@ namespace Contact_Tracing_App
         {
             if (chkbxNo1.Checked)
             {
-                chkbxyes1.Checked = false;
+                chkbxYes1.Checked = false;
             }
-            else if (chkbxyes1.Checked)
+            else if (chkbxYes1.Checked)
             {
                 chkbxNo1.Checked = false;
             }
@@ -140,9 +196,9 @@ namespace Contact_Tracing_App
         {
             if (chkbxNo2.Checked)
             {
-                chkbxyes2.Checked = false;
+                chkbxYes2.Checked = false;
             }
-            else if (chkbxyes2.Checked)
+            else if (chkbxYes2.Checked)
             {
                 chkbxNo2.Checked = false;
             }
@@ -151,71 +207,71 @@ namespace Contact_Tracing_App
         private void File()
         {
             //making a copy of responses
-            if (cmboxmonth.Text == "January")
+            if (cmbxMonth.Text == "January")
             {
                 month = "January";
                 File_content();
             }
-            else if (cmboxmonth.Text == "February")
+            else if (cmbxMonth.Text == "February")
             {
                 month = "February";
                 File_content();
             }
-            else if (cmboxmonth.Text == "March")
+            else if (cmbxMonth.Text == "March")
             {
                 month = "March";
                 File_content();
             }
-            else if (cmboxmonth.Text == "April")
+            else if (cmbxMonth.Text == "April")
             {
                 month = "April";
                 File_content();
             }
-            else if (cmboxmonth.Text == "May")
+            else if (cmbxMonth.Text == "May")
             {
                 month = "May";
                 File_content();
             }
-            else if (cmboxmonth.Text == "June")
+            else if (cmbxMonth.Text == "June")
             {
                 month = "June";
                 File_content();
             }
-            else if (cmboxmonth.Text == "July")
+            else if (cmbxMonth.Text == "July")
             {
                 month = "July";
                 File_content();
             }
-            else if (cmboxmonth.Text == "August")
+            else if (cmbxMonth.Text == "August")
             {
                 month = "August";
                 File_content();
             }
-            else if (cmboxmonth.Text == "September")
+            else if (cmbxMonth.Text == "September")
             {
                 month = "September";
                 File_content();
             }
-            else if (cmboxmonth.Text == "October")
+            else if (cmbxMonth.Text == "October")
             {
                 month = "October";
                 File_content();
             }
-            else if (cmboxmonth.Text == "November")
+            else if (cmbxMonth.Text == "November")
             {
                 month = "November";
                 File_content();
             }
-            else if (cmboxmonth.Text == "December")
+            else if (cmbxMonth.Text == "December")
             {
                 month = "December";
                 File_content();
             }
         }
-        private void File_content ()
+        private void File_content()
         {
-            string day = cmboxDay.Text;
-            string year = cmboxYear.Text;   
+            string day = cmbxDay.Text;
+            string year = cmbxYear.Text;
             StreamWriter responses = new StreamWriter(@"C:\Users\Carl Joseph\source\repos\Contact Tracing App\Responses\" + (month) + " " + (day) + ", " + (year) + " responses.txt", true);
             ++counter;
             responses.WriteLine("Respondent " + counter);
@@ -224,11 +280,12 @@ namespace Contact_Tracing_App
             responses.WriteLine("Personal Information");
             responses.WriteLine("Name: " + txtbxFirstName.Text + " " + txtbxMiddleName.Text + " " + txtbxLastName.Text);
             responses.WriteLine("Age: " + txtbxAge.Text);
-            responses.WriteLine("Contact no.: " + txtbxcontactno.Text);
+            responses.WriteLine("Contact no.: " + txtbxContact.Text);
             responses.WriteLine("Email Address: " + txtbxEmail.Text);
-            responses.WriteLine("Address: " + txtbxaddress.Text);
+            responses.WriteLine("Address: " + txtbxAddress.Text);
+            responses.WriteLine("Zip Code: " + txtbxZip.Text);
             responses.WriteLine("Time of Visit: " + txtbxtime.Text);
-            responses.WriteLine("Date of Visit: " + cmboxmonth.Text + " " + cmboxDay.Text + ", " + cmboxYear.Text);
+            responses.WriteLine("Date of Visit: " + cmbxMonth.Text + " " + cmbxDay.Text + ", " + cmbxYear.Text);
             responses.WriteLine(" ");
             responses.WriteLine("Health Check");
             //Health Check question 1
@@ -269,7 +326,7 @@ namespace Contact_Tracing_App
                 responses.WriteLine("Experienced: " + chkbxSymptom9.Text);
             }
             //Health Check Question 2
-            if (chkbxyes1.Checked)
+            if (chkbxYes1.Checked)
             {
                 responses.WriteLine("Have been in close contact with a probable or confirmed case of COVID-19");
             }
@@ -278,7 +335,7 @@ namespace Contact_Tracing_App
                 responses.WriteLine("Did not have a close contact with a probable or confirmed case of COVID-19");
             }
             //Health Check Question 3
-            if (chkbxyes2.Checked)
+            if (chkbxYes2.Checked)
             {
                 responses.WriteLine("Fully Vaccinated");
             }
@@ -291,65 +348,11 @@ namespace Contact_Tracing_App
             responses.WriteLine(" ");
             responses.Close();
         }
-        private void cmboxMonthsearch_SelectedIndexChanged(object sender, EventArgs e)
-        {
-           if (cmboxMonthsearch.Text == "search month")
-            {
-                cmboxDaysearch.Enabled = false;
-            }
-           else
-            {
-                cmboxDaysearch.Enabled=true;
-            }
 
-        }
-
-        private void cmboxDaysearch_SelectedIndexChanged(object sender, EventArgs e)
+        private void btnData_Click(object sender, EventArgs e)
         {
-            if (cmboxDaysearch.Text == "Day")
-            {
-                cmboxYearsearch.Enabled = false;
-            }
-            else
-            {
-                cmboxYearsearch.Enabled = true;
-            }
-        }
-
-        private void cmboxYearsearch_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (cmboxYearsearch.Text == "Year")
-            {
-                btnsearch.Enabled = false;
-            }
-            else
-            {
-                btnsearch.Enabled = true;
-            }
-        }
-        private void btnsearch_Click(object sender, EventArgs e)
-        {
-            string month = cmboxMonthsearch.Text;
-            string day = cmboxDaysearch.Text;
-            string year = cmboxYearsearch.Text;
-            try
-            {
-                StreamReader Visitors = new StreamReader(@"C:\Users\Carl Joseph\source\repos\Contact Tracing App\Responses\" + (month) + " " + (day) + ", " + (year) + " responses.txt");
-                MessageBox.Show(Visitors.ReadToEnd());
-                Visitors.Close();
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("There's no visitor on this date");
-            }
-        }
-
-        private void btnQRcode_Click(object sender, EventArgs e)
-        {
-      
-            this.Hide();
-            formQRcode QR = new formQRcode();
-            QR.Show();
+            formADMIN ADMIN = new formADMIN();
+            ADMIN.Show();
         }
     }
 }

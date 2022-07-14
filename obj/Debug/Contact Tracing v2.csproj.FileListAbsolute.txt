@@ -1,0 +1,22 @@
+C:\Users\Carl Joseph\source\repos\WindowsFormsApp2\obj\Debug\Contact Tracing v2.csprojAssemblyReference.cache
+C:\Users\Carl Joseph\source\repos\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.formQR.resources
+C:\Users\Carl Joseph\source\repos\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Properties.Resources.resources
+C:\Users\Carl Joseph\source\repos\WindowsFormsApp2\obj\Debug\Contact Tracing v2.csproj.GenerateResource.cache
+C:\Users\Carl Joseph\source\repos\WindowsFormsApp2\obj\Debug\Contact Tracing v2.csproj.CoreCompileInputs.cache
+C:\Users\Carl Joseph\source\repos\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
+C:\Users\Carl Joseph\source\repos\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
+C:\Users\Carl Joseph\source\repos\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe.config
+C:\Users\Carl Joseph\source\repos\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe
+C:\Users\Carl Joseph\source\repos\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.pdb
+C:\Users\Carl Joseph\source\repos\WindowsFormsApp2\bin\Debug\AForge.dll
+C:\Users\Carl Joseph\source\repos\WindowsFormsApp2\bin\Debug\AForge.Video.DirectShow.dll
+C:\Users\Carl Joseph\source\repos\WindowsFormsApp2\bin\Debug\AForge.Video.dll
+C:\Users\Carl Joseph\source\repos\WindowsFormsApp2\bin\Debug\IronBarCode.dll
+C:\Users\Carl Joseph\source\repos\WindowsFormsApp2\bin\Debug\AForge.xml
+C:\Users\Carl Joseph\source\repos\WindowsFormsApp2\bin\Debug\AForge.Video.xml
+C:\Users\Carl Joseph\source\repos\WindowsFormsApp2\bin\Debug\AForge.Video.DirectShow.xml
+C:\Users\Carl Joseph\source\repos\WindowsFormsApp2\bin\Debug\IronBarCode.xml
+C:\Users\Carl Joseph\source\repos\WindowsFormsApp2\obj\Debug\Contact Tracing v2.csproj.CopyComplete
+C:\Users\Carl Joseph\source\repos\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.formTraceIt.resources
+C:\Users\Carl Joseph\source\repos\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.formADMIN.resources
+C:\Users\Carl Joseph\source\repos\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.formLog.resources
